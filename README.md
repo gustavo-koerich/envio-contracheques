@@ -1,5 +1,7 @@
 # Envio de Contracheques
 
+[![testes](https://github.com/gustavo-koerich/envio-contracheques/actions/workflows/testes.yml/badge.svg)](https://github.com/gustavo-koerich/envio-contracheques/actions/workflows/testes.yml)
+
 Programa de desktop para o RH: lê os recibos de salário em PDF, confere cada recibo contra o cadastro de colaboradores, **protege cada PDF com senha** (AES-256) e envia por e-mail, um por pessoa. Antes, o envio era feito à mão, um arquivo por vez.
 
 > Repositório de portfólio. A planilha de exemplo e os nomes usados no código são **fictícios**.
@@ -41,6 +43,14 @@ Para experimentar sem enviar nada:
 2. Os PDFs protegidos e os e-mails gerados ficam em `logs\simulacao`.
 
 As regras avançadas ficam em [`config.ini`](config.ini): padrão do nome do arquivo, layout do cabeçalho do recibo e formato da senha. O manual de uso para o RH está em [LEIAME.md](LEIAME.md).
+
+## Testes
+
+```powershell
+python -m unittest discover -s tests
+```
+
+Cobrem a montagem da senha, o bloqueio quando falta dado e a proteção AES-256 (o PDF só abre com a senha certa).
 
 ## Estrutura
 
