@@ -1,0 +1,6 @@
+# Referência apenas: as bibliotecas JÁ VÊM extraídas na pasta lib/ (todas em Python puro).
+# Não é preciso rodar pip na máquina do RH.
+pypdf==5.9.0
+openpyxl==3.1.5
+et_xmlfile==2.0.0
+comtypes==1.4.17

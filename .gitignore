@@ -1,0 +1,12 @@
+# bibliotecas embarcadas (geradas pelo instalador) e arquivos locais
+lib/
+logs/
+__pycache__/
+configuracoes.ini
+credencial.dat
+instalar.log
+*.pdf
+logo.png
+icone.png
+icone.ico
+*.lnk
